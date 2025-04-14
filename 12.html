@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Hamvak Földjén</title>
+</head>
+
+<body>
+    <h1 class="k">🧟‍♂️ Hamvak Földjén</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>12.</h2>
+                <p>
+                    A felszínre érve egy Árnyékszülött vár rád – hatalmas, kígyószerű test, füstből formálva.
+                    Harcolj vagy menekülj.
+                </p>
+                <p>   
+                    Harc :
+                    Minden körben dobj ( 1-3 ig ő sebez 2 ÉP-t, 5-6 nál te sebzed , 4 nél senki nem sérül).
+                </p> 
+                    <ul>
+                        <li>Árnyékszülött 8 ÉP</li>                                      
+                        <li>Menekülés esetén vesztesz 3 ÉP-t.</li>
+                    </ul>
+                <p id="one"></p>
+                <button onclick="random()">Dobj</button>
+
+                <script>
+                    function random() {
+                        document.getElementById("one").innerHTML = Math.floor(Math.random() * 6) +1;
+                    }
+                </script>
+                <img class="img-fluid" src="12.png" alt="">
+            </div>
+            <div class="col-md-6">
+                <h2>Mit csinálsz?</h2>
+                <p><a href="./1.html">Ha meghaltál , kezd előröl. </a> </p>
+                <p><a href="./4.html">Ha győztél</a></p>
+                <p><a href="./4.html">Ha menekülsz</a></p>                
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
